@@ -23,15 +23,11 @@ class TrainingsController < ApplicationController
         locations = params[:training][:location]
 
         if locations.count > 0
-          training = Training.create!(:created_at => Time.at((params[:training][:datetime].to_i/1000)))
+          training = Training.create! created_at: Time.at((params[:training][:datetime].to_i/1000))
 
           locations.each do |xml_location|
             unless xml_location["latitude"].nil? && xml_location["longitude"].nil?
-              location = Location.new
-              location.latitude = xml_location["latitude"]
-              location.longitude = xml_location["longitude"]
-              location.training_id = training.id
-              location.save!
+              Location.create! latitude: xml_location["latitude"], longitude: xml_location["longitude"], training_id: training.id
             end
           end
         end
