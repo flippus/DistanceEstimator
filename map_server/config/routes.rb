@@ -3,7 +3,7 @@ MapServer::Application.routes.draw do
 
   root :to => 'trainings#index'
 
-  match 'export' => 'trainings#export', as: "export", :via => [:get, :post]
+  match 'export' => 'trainings#export', as: "export", via: :post
 
 
 
