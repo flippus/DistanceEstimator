@@ -19,7 +19,7 @@ class TrainingsController < ApplicationController
 
   def export
     begin
-      if !params[:training].nil? && !params[:training][:location].nil? && @params[:training][:datetime].nil?
+      if !params[:training].nil? && !params[:training][:location].nil? && !params[:training][:datetime].nil?
         locations = params[:training][:location]
 
         if locations.count > 0
