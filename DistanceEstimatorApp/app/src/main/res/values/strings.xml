@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">DistanceEstimatorApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">RunningApp</string>
+    <string name="start_tracking_button">Start tracking</string>
+    <string name="pause_tracking_button">Pause</string>
+    <string name="title_activity_training">TrainingView</string>
+    <string name="training_data_tab">Training Data</string>
+    <string name="training_diagram_tab">Training Diagram</string>
+    <string name="training_map_tab">Training Map</string>
+    <string name="delete_button">Delete</string>
+    <string name="export_button">Export</string>
+    <string name="title_activity_tracking">TrackingActivity</string>
+    <string name="stop_tracking_button">Stop tracking</string>
+    <string name="title_activity_select_tracking">Select Sport</string>
+    <string name="seconds_between_2_positions">Period between 2 tracking Positions:</string>
+    <string name="title_activity_create_sport">Create Sport</string>
+    <string name="create_sport">Create Sport</string>
+    <string name="name_of_sport">Name of sport:</string>
+    <string name="title_activity_training_data">Data</string>
+    <string name="title_activity_training_diagramm">Diagrams</string>
+    <string name="title_activity_training_map">Map</string>
+    <string name="tab_data">Data</string>
+    <string name="tab_diagrams">Diagrams</string>
+    <string name="tab_map">Map</string>
+    <string name="create_sport_menu_item">Create new sport type</string>
+    <string name="notification_title">DistanceEstimator</string>
+    <string name="notification_message">tracking your distance</string>
+    <string name="ticker_text">Tracking distance</string>
+
+</resources>
