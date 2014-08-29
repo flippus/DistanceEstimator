@@ -19,14 +19,14 @@ class TrainingsController < ApplicationController
 
   def export
     begin
-      if params[:training] != nil && params[:training][:location] != nil && params[:training][:datetime] != nil
+      unless params[:training].nil? && params[:training][:location].nil? && params[:training][:datetime].nil?
         locations = params[:training][:location]
 
         if locations.count > 0
           training = Training.create!(:created_at => Time.at((params[:training][:datetime].to_i/1000)))
 
           locations.each do |xml_location|
-            if xml_location["latitude"] != nil && xml_location["longitude"] != nil
+            unless xml_location["latitude"].nil? && xml_location["longitude"].nil?
               location = Location.new
               location.latitude = xml_location["latitude"]
               location.longitude = xml_location["longitude"]
