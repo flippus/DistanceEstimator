@@ -1,4 +1,6 @@
 class TrainingsController < ApplicationController
+  skip_before_action :verify_authenticity_token, :export
+
   # GET /trainings
   # GET /trainings.json
   def index
