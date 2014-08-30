@@ -20,6 +20,9 @@ import org.xmlpull.v1.XmlSerializer;
 import android.util.Log;
 import android.util.Xml;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class SendXml {
 
     public String createXml(List<MyLocation> locationList) {

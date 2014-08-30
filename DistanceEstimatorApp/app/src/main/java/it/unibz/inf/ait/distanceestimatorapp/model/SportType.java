@@ -1,5 +1,8 @@
 package it.unibz.inf.ait.distanceestimatorapp.model;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class SportType {
 
 	private int id;

@@ -13,6 +13,9 @@ import org.joda.time.Period;
 import android.location.Location;
 import android.util.Log;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class Training {
 	private int id;
 	private Duration duration;

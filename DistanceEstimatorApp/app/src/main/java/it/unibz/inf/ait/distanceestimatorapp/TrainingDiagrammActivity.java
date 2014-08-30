@@ -18,6 +18,9 @@ import android.view.Menu;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TrainingDiagrammActivity extends Activity {
 
 	@Override

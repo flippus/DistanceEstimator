@@ -16,6 +16,9 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TrainingMapActivity extends MapActivity {
 
 	@Override

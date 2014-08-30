@@ -23,6 +23,9 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TrackingActivity extends Activity {
 
 	public final static String EXTRA_MESSAGE = "it.unibz.inf.ait.distanceestimatorapp.MESSAGE";

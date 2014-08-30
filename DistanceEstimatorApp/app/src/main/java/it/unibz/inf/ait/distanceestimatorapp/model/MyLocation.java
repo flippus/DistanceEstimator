@@ -2,6 +2,9 @@ package it.unibz.inf.ait.distanceestimatorapp.model;
 
 import org.joda.time.DateTime;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class MyLocation {
 
 	private int id;

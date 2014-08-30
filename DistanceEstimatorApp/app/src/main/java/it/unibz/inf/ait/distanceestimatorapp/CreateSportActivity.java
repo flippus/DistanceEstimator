@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class CreateSportActivity extends Activity {
 
 	@Override

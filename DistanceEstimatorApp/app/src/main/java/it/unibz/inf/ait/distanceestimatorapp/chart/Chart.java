@@ -3,6 +3,9 @@ package it.unibz.inf.ait.distanceestimatorapp.chart;
 import it.unibz.inf.ait.distanceestimatorapp.model.MyLocation;
 import android.location.Location;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class Chart {
 
 	public double computeDistance(MyLocation startPoint, MyLocation endPoint) {

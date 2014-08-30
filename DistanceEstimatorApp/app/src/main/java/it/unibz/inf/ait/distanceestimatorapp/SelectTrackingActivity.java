@@ -15,6 +15,9 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class SelectTrackingActivity extends Activity {
 
 	public final static String EXTRA_MESSAGE = "it.unibz.inf.ait.distanceestimatorapp.MESSAGE";

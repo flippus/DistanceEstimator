@@ -19,6 +19,9 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TrackingService extends Service {
 
 	public final static String EXTRA_MESSAGE = "it.unibz.inf.ait.distanceestimatorapp.MESSAGE";

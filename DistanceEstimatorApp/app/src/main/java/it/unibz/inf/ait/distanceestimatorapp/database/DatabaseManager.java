@@ -17,6 +17,9 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class DatabaseManager {
 
 	private static final int DATABASE_VERSION = 1;

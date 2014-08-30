@@ -13,6 +13,9 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.Projection;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class RouteOverlay extends Overlay {
 
 	private List<GeoPoint> geoPointList = new ArrayList<GeoPoint>();

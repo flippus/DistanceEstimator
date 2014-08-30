@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class SportTypeAdapter extends ArrayAdapter<SportType> {
 
 	private Context context;

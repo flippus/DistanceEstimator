@@ -21,6 +21,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class MainActivity extends Activity {
 
 	public final static String EXTRA_MESSAGE = "it.unibz.inf.ait.distanceestimatorapp.MESSAGE";

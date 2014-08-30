@@ -20,6 +20,9 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Paint.Align;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TimePerDistanceChart extends Chart {
 
 	public GraphicalView compute(Context context, Training training,

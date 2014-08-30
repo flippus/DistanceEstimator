@@ -22,6 +22,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+/**
+ * @author Philipp Neugebauer
+ */
 public class TrainingDataActivity extends Activity {
 
 	private int id;

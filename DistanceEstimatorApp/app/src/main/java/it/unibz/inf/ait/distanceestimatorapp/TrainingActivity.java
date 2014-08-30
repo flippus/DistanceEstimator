@@ -7,6 +7,9 @@ import android.view.Menu;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
+/**
+ * @author Philipp Neugebauer
+ */
 @SuppressWarnings("deprecation")
 public class TrainingActivity extends TabActivity {
 
