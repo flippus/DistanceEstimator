@@ -1,4 +1,4 @@
-package distanceestimatorapp.ait.inf.unibz.it.myapplication;
+package it.unibz.inf.ait.distanceestimatorapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
