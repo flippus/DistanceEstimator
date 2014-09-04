@@ -10,3 +10,7 @@
 Philipp Neugebauer
 
 Developed in winter 2012/2013 at [FUB](Free University of Bolzano)
+
+### License
+
+(Apache v2)[https://github.com/flippus/DistanceEstimator/blob/master/LICENSE]
