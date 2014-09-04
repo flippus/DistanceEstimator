@@ -18,12 +18,13 @@ class TrainingsController < ApplicationController
   end
 
   def export
+    MyLog.debug training_params.to_s
     begin
-      if !params[:training].nil? && !params[:training][:location].nil? && !params[:training][:datetime].nil?
-        locations = params[:training][:location]
+      if !training_params.nil? && !training_params[:location].nil? && !training_params[:datetime].nil?
+        locations = training_params[:location]
 
         if locations.count > 0
-          training = Training.create! created_at: Time.at((params[:training][:datetime].to_i/1000))
+          training = Training.create! created_at: Time.at((training_params[:datetime].to_i/1000))
 
           locations.each do |xml_location|
             if !xml_location["latitude"].nil? && !xml_location["longitude"].nil?
@@ -36,6 +37,7 @@ class TrainingsController < ApplicationController
       MyLog.debug "timeout #{e}"
     end
 
+    puts params.to_s
     render :nothing => true
   end
 
@@ -48,6 +50,12 @@ class TrainingsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to trainings_url }
     end
+  end
+
+  private
+
+  def training_params
+      params.permit!
   end
 
 end
