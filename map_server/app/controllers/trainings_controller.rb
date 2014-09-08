@@ -33,7 +33,7 @@ class TrainingsController < ApplicationController
         end
       end
     rescue TimeoutError => e
-      MyLog.debug "timeout #{e}"
+      logger.info "timeout #{e}"
     end
 
     render :nothing => true
