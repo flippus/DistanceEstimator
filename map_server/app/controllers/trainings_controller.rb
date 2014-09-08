@@ -18,7 +18,6 @@ class TrainingsController < ApplicationController
   end
 
   def export
-    MyLog.debug training_params.to_s
     begin
       if !training_params.nil? && !training_params[:location].nil? && !training_params[:datetime].nil?
         locations = training_params[:location]
@@ -37,7 +36,6 @@ class TrainingsController < ApplicationController
       MyLog.debug "timeout #{e}"
     end
 
-    puts params.to_s
     render :nothing => true
   end
 
