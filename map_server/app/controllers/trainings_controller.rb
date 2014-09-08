@@ -53,7 +53,7 @@ class TrainingsController < ApplicationController
   private
 
   def training_params
-      params.require(:training).permit!
+      params.require(:training).permit(:datetime, location: [:latitude, :longitude, :training_id])
   end
 
 end
