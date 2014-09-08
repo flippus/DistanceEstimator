@@ -53,7 +53,7 @@ class TrainingsController < ApplicationController
   private
 
   def training_params
-      params.permit!
+      params.require(:training).permit!
   end
 
 end
