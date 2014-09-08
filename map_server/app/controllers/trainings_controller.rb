@@ -23,11 +23,14 @@ class TrainingsController < ApplicationController
         locations = training_params[:location]
 
         if locations.count > 0
-          training = Training.create! created_at: Time.at((training_params[:datetime].to_i/1000))
+          Training.transaction do
+            training = Training.create! created_at: Time.at((training_params[:datetime].to_i/1000))
 
-          locations.each do |xml_location|
-            if !xml_location["latitude"].nil? && !xml_location["longitude"].nil?
-              Location.create! latitude: xml_location["latitude"], longitude: xml_location["longitude"], training_id: training.id
+            #Active Record does not support saving multiple values at same time, therefore this is a non performant operation
+            locations.each do |xml_location|
+              if !xml_location["latitude"].nil? && !xml_location["longitude"].nil?
+                Location.create! latitude: xml_location["latitude"], longitude: xml_location["longitude"], training_id: training.id
+              end
             end
           end
         end
@@ -53,7 +56,7 @@ class TrainingsController < ApplicationController
   private
 
   def training_params
-      params.require(:training).permit(:datetime, location: [:latitude, :longitude, :training_id])
+    params.require(:training).permit(:datetime, location: [:latitude, :longitude, :training_id])
   end
 
 end
