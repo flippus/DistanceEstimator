@@ -1,4 +1,6 @@
-# Android Run Tracking and Analysis Application with Online Export to a Rails Server #
+# Run Tracking Application for Android #
+
+The app tracks your running and analyses the performance. It also shows your track on Google Maps and allows the export to a Rails server to enable the easy showing of your tracks to your friends.
 
 ### How to use ###
 
